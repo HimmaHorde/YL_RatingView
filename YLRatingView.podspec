@@ -2,9 +2,12 @@
 Pod::Spec.new do |s|
   s.name         = "YLRatingView"
 
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   
-  s.summary      = "星级评分，支持 xib，支持自动布局"
+  s.summary      = "a easy way to rate"
+    s.description  = <<-DESC
+                    YLRatingView can score easyly；
+                   DESC
 
   s.homepage     = "http://www.jianshu.com/users/d2c069de1a7d"
 
