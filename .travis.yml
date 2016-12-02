@@ -1,4 +1,5 @@
 language: objective-c
-# osx_image: xcode8.1
-xcode_project: YLRatingView.xcodeproj # path to your xcodeproj folder
-xcode_scheme: YLRatingView
+osx_image: xcode8.1
+script: 
+xcodebuild -project YLRatingView.xcodeproj -target YLRatingView -configuration "Release" -arch "armv7 armv7s armv64" -sdk iphoneos clean build
+
