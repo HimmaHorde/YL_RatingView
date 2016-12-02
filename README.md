@@ -1,9 +1,9 @@
-# YL_RatingView
+# YL_RatingView [![Build Status](https://travis-ci.org/GuiFoA/YL_RatingView.svg?branch=master)](https://travis-ci.org/GuiFoA/YL_RatingView)
+
 - 星级评分，支持 xib，支持自动布局。
 - 可点击评分和拖动评分。
 - 可设置评分精度，一颗星、半颗星或者精确到小数
 
-![截图](http://i1.piimg.com/1949/4150adee1b6bef53.png "截图")
 ## Requirements
 YLRatingView works on iOS 7+ and requires ARC to build. It depends on the following Apple frameworks, which should already be included with most Xcode templates:
 
