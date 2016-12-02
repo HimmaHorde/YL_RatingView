@@ -16,9 +16,9 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/GuiFoA/YL_RatingView.git", :tag => "#{s.version}" }
 
-  s.source_files  = "Classes", "Classes/*.{h,m}"
+  s.source_files  = "Classes", "YLRatingView/Classes/*.{h,m}"
 
-  s.resources = "Resources/*.png"
+  s.resources = "YLRatingView/Resources/*.png"
 
   s.requires_arc = true
 
