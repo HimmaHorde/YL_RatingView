@@ -1,4 +1,0 @@
-language: objective-c
-osx_image: xcode8.1
-xcode_project: YLRatingView.xcodeproj # path to your xcodeproj folder
-xcode_scheme: YLRatingView
