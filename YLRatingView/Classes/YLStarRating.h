@@ -73,7 +73,8 @@ typedef NS_ENUM(NSUInteger, YLStarDisplayStatus) {
  *  设置控件分数
  *
  *  @param score     分数，必须在 0 － 1 之间
- *  @param isAnimate 是否启用动画 */
+ *  @param isAnimate 是否启用动画 
+ */
 - (void)setScore:(float)score withAnimation:(bool)isAnimate;
 
 /*!
@@ -81,7 +82,8 @@ typedef NS_ENUM(NSUInteger, YLStarDisplayStatus) {
  *
  *  @param score      分数，必须在 0 － 1 之间
  *  @param isAnimate  是否启用动画
- *  @param completion 动画完成block */
+ *  @param completion 动画完成block
+ */
 - (void)setScore:(float)score withAnimation:(bool)isAnimate completion:(void (^)(BOOL finished))completion;
 
 @end

@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "YLStarRating.h"
 
-@interface ViewController ()
+@interface ViewController ()<YLStarRatingDelegate>
+
+@property (weak, nonatomic) IBOutlet YLStarRating *xibRatingView;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 @end
 
@@ -16,9 +20,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    CGRect frame = [[UIScreen mainScreen] bounds];
+    
+    YLStarRating * halfRatingview = [[YLStarRating alloc] initWithFrame:frame numberOfStar:6];
+    
+    halfRatingview.delegate = self;
+    
+    halfRatingview.displayStatus = YLStarDisplayStatusHalf;
+    
+    [self.view addSubview:halfRatingview];
+    
 }
 
+
+- (void)starRatingView:(YLStarRating *)view score:(float)score
+{
+    [UIView animateWithDuration:1
+                     animations:^{
+                         _scoreLabel.text = [NSString stringWithFormat:@"%g",score];
+                     }];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
